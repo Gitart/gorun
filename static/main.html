@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  
+  <link   rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link   rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <style type="text/css" >
+          body        {margin:10px;}
+          html        {color: #3B3B3B; font-size:10px; font-family:Calibri;}
+          td1         {border: 1px gray solid; padding:5px;}
+         .ddblock     {padding:10px;}
+         .hhd1        {border:1px gray solid; padding:5px; background-color: #E7E7E7; font-weight: bold;}
+         .hdsf1       {color: #3366FF;	font-weight: bold;	font-size:17px;}
+         .btn-group   {width:350px}
+         .mb          {width:800px; left:50%; margin-left:-400px; position: absolute; top: 10%;   box-shadow: -1px 5px 10px rgba(0,0,0,0.5); /* Параметры тени */    }
+		 .drop-shadow { -webkit-box-shadow: -1px 5px 10px rgba(0,0,0,0.5);box-shadow: -1px 5px 10px rgba(0,0,0,0.5);}
+         .container.drop-shadow {padding-left:0; padding-right:0;}
+		 .btn         {width:100px;} 
+ </style>
+ 
+
+  <script type="text/javascript">
+		$(document).ready(function(){
+			//$('[data-toggle="tooltip"]').tooltip({placement : 'right'});
+			$('[data-toggle="tooltip"]').tooltip({placement : 'bottom'});
+		});
+   </script>
+</head>
+
+
+<body>
+
+<div class="mb" >
+<div class="containers">
+<div class="panel panel-default" style="margin:10px;">
+  
+  
+  <div class="panel-heading"> 
+	  <h3 style="margin-left:20px;">
+		 <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Регистрация новой сети <br>
+		 <small>Регистрациионная форма сети аптек</small>
+	  </h3>
+  </div>
+
+  <!--Form update-insert-->  
+  <div class="panel-body">
+	    <form id="Frmmain" action="/api/system/users/add/" method="post" class="form-horizontal" role="form"  >
+  
+
+    <div class="form-group  input-group-sm">
+         <label class="control-label col-sm-4" for="Fname"> 
+			 <!--<span class="glyphicon glyphicon-user" aria-hidden="false"></span>-->
+			 Наименование сети
+		 </label> 
+		 <div class="col-sm-7">    
+		      <input type="text" class="form-control" id="Fname" name="Fname" placeholder="Наименование сети" data-toggle="tooltip" data-placement="right" data-original-title="Наименование сети"  >
+		 </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="Lname">
+	         <!--<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="false"></span>-->
+			 Полное наименование 
+	  </label>
+	  
+      <div class="col-sm-7">          
+           <input type="text" class="form-control" id="Lname" name="Lname" placeholder="Полное наименование (не обязательное поле)">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="Mname" >Адрес</label>
+      <div class="col-sm-7">
+      <input type="Text" class="form-control" id="Mname" name="Mname" placeholder="Адрес (не обязательное поле)">
+      </div>
+    </div>
+
+    
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="Phonemob">Мобильный </label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="Phonemob" name="Phonemob" placeholder="Мобильный телефон">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="Phonework">Телефон рабочий </label>
+      <div class="col-sm-7">          
+        <input type="text" class="form-control" id="Phonework" name="Phonework" placeholder="Телефон рабочий">
+      </div>
+    </div>
+    
+	
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="email">Email </label>
+      <div class="col-sm-7">
+	  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+	  </div>
+    </div>
+
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="Position">Ответственный</label>
+      <div class="col-sm-7">
+           <input type="text" class="form-control" id="Position" placeholder="Ответственный - фамилия имя" name="Position">
+      </div>
+    </div>
+	
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="Descrip">Описание</label>
+      <div class="col-sm-7">
+           <input type="text" class="form-control" id="Descrip" placeholder="Описание" name="Descrip">
+      </div>
+    </div>
+	
+	
+
+	<!--Hidden-->
+	<input type="hidden"  id="Coorporation" name="Coorporation" value="123377777">
+	<input type="hidden"  id="Structure"    name="Structure"    value="555555">
+	<input type="hidden"  id="Executor"     name="Executor"     value="$Admin$">
+	<input type="hidden"  id="Sess"         name="Sess"         value="Session234$">
+	<input type="hidden"  id="Keys"         name="Keys"         value="Keys-ceberty3180e654c038e866eab9a7a0ef9qweer123">
+	
+	<hr>
+    <div class="form-group ">        
+		  <div class="col-sm-offset-3 col-sm-10">
+			   <button type="submit" class="btn btn-success">Cохранить</button>
+			   <button type="submit" class="btn btn-default">Подсказка</button>
+			   <button type="button" class="btn btn-default">Отказаться</button>
+		  </div>
+    </div>
+	
+  </form>
+  
+  	<div class="panel panel-default" style="display:;">
+	    <div class="panel-heading">Внимание...</div>
+		<div class="panel-body">
+			<p>
+			    * Обязательные поля к заполнению обозначены звездочкой.</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
