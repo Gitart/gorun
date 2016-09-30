@@ -1,6 +1,6 @@
 
 
- ##MAIN OFFICE
+ ## MAIN OFFICE
     	Copyright Softinform (2014-2016)
  
  		Description        : Service REST API
@@ -25,7 +25,7 @@
        See the License for the specific language governing permissions and
        limitations under the License.
  
- ##Условные обозначения, сокращения и соглашения о коде :
+ ## Условные обозначения, сокращения и соглашения о коде :
       (Термины, соглашения и обозначения, принятые в документации)
  
  		Внутреннее соглашение о наименовании функций :
@@ -38,14 +38,14 @@
        Group :
              AP     - Ассортиментный план
        
- 		Name Servise :
+ 		## Name Servise :
  		     Hof    - Head Office
  		     Mov    - Move
  		     Olp    - Olap
  		     Dsc    - Discount
  
- ##Agreement and designations (Prefix) :
- 		     Sys_  - Cистемные для внутреннего использования   
+ ## Agreement and designations Prefix:      
+ 		     Sys_|Cистемные для внутреннего использования   |
  		     Wrk_  - Рабочие функции общего характера   
  		     Adm_  - Административные задачи   
  		     Atr_  - Опредление атрибутов для параметров   
@@ -74,7 +74,7 @@
  
  Time format for cookies : time.Now().Format("Mon, 02 Jan 2006 15:04:05 MST")
  
- ##HTTP verbs :  Example(X-HTTP-Method-Override: PATCH) :
+ ## HTTP verbs :  Example(X-HTTP-Method-Override: PATCH) :
             GET	    Get a resource or list of resources
             POST    Create a resource
             Get      List of resources using a more advanced query
