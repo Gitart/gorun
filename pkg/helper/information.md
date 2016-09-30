@@ -15,17 +15,17 @@ Copyright GoInform (2014-2016)
 Copyright 2014 Main Office.  
 All Rights Reserved. 
   
-       Licensed under the Apache License, Version 2.0 (the "License");
-       you may not use this file except in compliance with the License.
-       You may obtain a copy of the License at
+ Licensed under the Main Office License, Version 2.3. (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
  
-       http://www.mainoffice.ua/licenses/LICENSE-2.0
+ http://www.mainoffice.ua/licenses/LICENSE-2.0
  
-       Unless required by applicable law or agreed to in writing, software
-       distributed under the License is distributed on an "AS IS" BASIS,
-       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-       See the License for the specific language governing permissions and
-       limitations under the License.
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
  
 #Условные обозначения, сокращения и соглашения о коде  
 (Термины, соглашения и обозначения, принятые в документации)
@@ -45,7 +45,7 @@ All Rights Reserved.
 
 
        
-## Name Servise :
+##Name Servise :
 |Hof|Head Office
 |----|----|
 |Mov|Move
@@ -108,18 +108,18 @@ Time format for cookies : time.Now().Format("Mon, 02 Jan 2006 15:04:05 MST")
 |**409**|There's a conflict between the request and the state of the data on the server.
  
 #Links for code HTTP :
-            http://great-world.ru/kody-otvetov-servera-i-oshibki-http-200-301-404-302-500-503-550/ 
-            http://computerlessons.ru/lessons/vds/errors.html 
-            https://yandex.ru/support/webmaster/error-dictionary/http-codes.xml 
-            https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP 
-            http://www.restapitutorial.ru/httpstatuscodes.html 
-            http://unicode-table.com/ru/#control-character        Unicode 
+   [Error code](http://great-world.ru/kody-otvetov-servera-i-oshibki-http-200-301-404-302-500-503-550/) 
+   [Errors lessons](http://computerlessons.ru/lessons/vds/errors.html)
+   [Error dictionary](https://yandex.ru/support/webmaster/error-dictionary/http-codes.xml)
+[Http](ttps://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP) 
+   [Http stsus](http://www.restapitutorial.ru/httpstatuscodes.html)
+   [Control charter](http://unicode-table.com/ru/#control-character)
  
 #Cистемная информация :
-           r.db("rethinkdb").table("table_config")                                          - управление параметрами таблицами
-           r.db("").tableCreate("Directory", {durability:"soft", primaryKey:"ID"});         - создание таблиц с параметрами
+    r.db("rethinkdb").table("table_config")                                          - управление параметрами таблицами
+    r.db("").tableCreate("Directory", {durability:"soft", primaryKey:"ID"});         - создание таблиц с параметрами
 
 #Обновление вресии для Sublime Package
-            https://github.com/DisposaBoy/GoSublime
+   [Update sublime3](https://github.com/DisposaBoy/GoSublime)
  
  
