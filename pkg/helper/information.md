@@ -108,12 +108,12 @@ Time format for cookies : time.Now().Format("Mon, 02 Jan 2006 15:04:05 MST")
 |**409**|There's a conflict between the request and the state of the data on the server.
  
 #Links for code HTTP :
-   [Error code](http://great-world.ru/kody-otvetov-servera-i-oshibki-http-200-301-404-302-500-503-550/) 
-   [Errors lessons](http://computerlessons.ru/lessons/vds/errors.html)
-   [Error dictionary](https://yandex.ru/support/webmaster/error-dictionary/http-codes.xml)
-[Http](ttps://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP) 
-   [Http stsus](http://www.restapitutorial.ru/httpstatuscodes.html)
-   [Control charter](http://unicode-table.com/ru/#control-character)
+   [Error code](http://great-world.ru/kody-otvetov-servera-i-oshibki-http-200-301-404-302-500-503-550/)    
+   [Errors lessons](http://computerlessons.ru/lessons/vds/errors.html)   
+   [Error dictionary](https://yandex.ru/support/webmaster/error-dictionary/http-codes.xml)   
+[Http](ttps://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP)    
+   [Http stsus](http://www.restapitutorial.ru/httpstatuscodes.html)   
+   [Control charter](http://unicode-table.com/ru/#control-character)   
  
 #Cистемная информация :
     r.db("rethinkdb").table("table_config")                                          - управление параметрами таблицами
