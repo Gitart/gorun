@@ -6,7 +6,7 @@ Description        : Service REST API
 Version            : Version 5.2.0  
 Date Started       : 03.11.2014  
 Date Changed       : 29.07.2016 
-Author             : Savchenko Arthur  
+Author             : Savchenko Arthur    
 Last Upadte Date   : 29.07.2016 10:45 
  
 Copyright 2014 Main Office.  
