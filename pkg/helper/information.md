@@ -45,34 +45,34 @@
  		     Dsc    - Discount
  
  ##♣ Agreement and designations (Prefix) :
- 		     Sys_  - Cистемные для внутреннего использования
- 		     Wrk_  - Рабочие функции общего характера
- 		     Adm_  - Административные задачи
- 		     Atr_  - Опредление атрибутов для параметров
- 		     Rep_  - Отчеты, сводки, информационные бюлютени
- 		     Ser_  - Сервисные для работы сервиса
- 		     Set_  - Внесение информации
-         Get_  - Получение информации
- 		     Sec_  - Функции для обслуживания секретной информации (ключи, хеши, пароли, логины)
- 		     Inf_  - Информационные, банеры, гаджеты, информеры, подсказки, всплывающие окна
- 		     Log_  - Связанные с логированием операций
- 		     Cal_  - Математические расчеты и операции
- 		     Mon_  - Мониторинг системы
-         Mel_  - Отправка на почту     
- 		     Utl_  - Утилиты для обслуживания сервиса
- 		     Tst_  - Тестовые функции котрые требуют последующего удаления и нужны только для проверки работоспособности другого функционала
- 		     Tmp_  - Временные функции
- 		     Man_  - Манеджер информации
- 		     Rig_  - Управление правами пользователей и системой
-         Lib_  - Библиотеки
-         Cry_  - Крптографическаие функции
-         Acc_  - Функции прав и разрешений
-         Wdb_  - Работа с базой данных
-         Ops_  - Взаимодействие с опреационной системой
-         Oth_  - Прочие функции которые не попали в предыдущие категории
-         Stk_  - Остатки
+ 		     Sys_  - Cистемные для внутреннего использования 
+ 		     Wrk_  - Рабочие функции общего характера 
+ 		     Adm_  - Административные задачи 
+ 		     Atr_  - Опредление атрибутов для параметров 
+ 		     Rep_  - Отчеты, сводки, информационные бюлютени 
+ 		     Ser_  - Сервисные для работы сервиса 
+ 		     Set_  - Внесение информации 
+        Get_  - Получение информации 
+ 		     Sec_  - Функции для обслуживания секретной информации (ключи, хеши, пароли, логины) 
+ 		     Inf_  - Информационные, банеры, гаджеты, информеры, подсказки, всплывающие окна 
+ 		     Log_  - Связанные с логированием операций 
+ 		     Cal_  - Математические расчеты и операции 
+ 		     Mon_  - Мониторинг системы 
+        Mel_  - Отправка на почту      
+ 		     Utl_  - Утилиты для обслуживания сервиса 
+ 		     Tst_  - Тестовые функции котрые требуют последующего удаления и нужны только для проверки работоспособности другого функционала 
+ 		     Tmp_  - Временные функции 
+ 		     Man_  - Манеджер информации 
+ 		     Rig_  - Управление правами пользователей и системой 
+        Lib_  - Библиотеки 
+        Cry_  - Крптографическаие функции 
+        Acc_  - Функции прав и разрешений 
+        Wdb_  - Работа с базой данных 
+        Ops_  - Взаимодействие с опреационной системой 
+        Oth_  - Прочие функции которые не попали в предыдущие категории 
+        Stk_  - Остатки 
  
-      Time format for cookies : time.Now().Format("Mon, 02 Jan 2006 15:04:05 MST")
+ Time format for cookies : time.Now().Format("Mon, 02 Jan 2006 15:04:05 MST")
  
  ##HTTP verbs :  Example(X-HTTP-Method-Override: PATCH) :
             GET	    Get a resource or list of resources
@@ -94,12 +94,12 @@
  *                      For example, if you attempt to submit a pull request and there is already a pull request for the commits, the response code is 409.
  
  ##Links for code HTTP :
-            http://great-world.ru/kody-otvetov-servera-i-oshibki-http-200-301-404-302-500-503-550/
-            http://computerlessons.ru/lessons/vds/errors.html
-            https://yandex.ru/support/webmaster/error-dictionary/http-codes.xml
-            https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP
-            http://www.restapitutorial.ru/httpstatuscodes.html
-            http://unicode-table.com/ru/#control-character        Unicode
+            http://great-world.ru/kody-otvetov-servera-i-oshibki-http-200-301-404-302-500-503-550/ 
+            http://computerlessons.ru/lessons/vds/errors.html 
+            https://yandex.ru/support/webmaster/error-dictionary/http-codes.xml 
+            https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2_%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F_HTTP 
+            http://www.restapitutorial.ru/httpstatuscodes.html 
+            http://unicode-table.com/ru/#control-character        Unicode 
  
  ##     Cистемная информация :
            r.db("rethinkdb").table("table_config")                                          - управление параметрами таблицами
