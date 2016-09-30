@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+var1="Очистка оперативки на $(hostname -f)\nДата:\t$(date +%d.%m.%Y\ %H:%M:%S)\nОперативная память:\n-----------------------------------До выполнение задания.------------------------------------\n$(free -m)\n-----------------------------------После выполнение задания.---------------------------------\n\t"
+
+echo -e $var1;
+
+sync
+#Чистим pagecache: 
+sudo echo 1 > /proc/sys/vm/drop_caches
+#Чистим dentrie и inode кэши: 
+sudo echo 2 > /proc/sys/vm/drop_caches
+#Чистим pagecache, dentrie и inode кэши: 
+sudo echo 3 > /proc/sys/vm/drop_caches
+sync
+
+echo -e "$var1\n$(free -m)\n\nЗадание выполнено.\n" | mail -s "Mamomory clear $(date +%d.%m.%Y\ %H:%M:%S)" alerc@meta.ua
+echo "Очистка кеша выполнена."
+exit

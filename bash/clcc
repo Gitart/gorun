@@ -1,0 +1,27 @@
+#!/bin/bash
+
+
+var1="Очистка оперативки на $(hostname -f)\nДата:\t$(date +%d.%m.%Y\ %H:%M:%S)\nОперативная память:\n-----------------------------------До выполнение задания.------------------------------------\n$(free -m)\n-----------------------------------После выполнение задания.---------------------------------\n\t"
+
+echo "DO"
+echo "****************************************************"
+
+free -m
+
+sync
+echo 1 > /proc/sys/vm/drop_caches
+echo 2 > /proc/sys/vm/drop_caches
+echo 3 > /proc/sys/vm/drop_caches
+sync
+
+
+
+
+echo ""
+echo "****************************************************"
+echo "AFTER CLERA MEMORY"
+free -m 
+
+echo -e "$var1\n$(free -m)\n\nЗадание выполнено.\n" | mail -s "Mamomory clear $(date +%d.%m.%Y\ %H:%M:%S)" alerc@meta.ua
+
+

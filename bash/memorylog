@@ -1,0 +1,19 @@
+#!/bin/bash
+
+free |grep Mem| awk '{ print $2 }'
+
+FREEMEM=$(free |grep Mem| awk '{ print $2 }')
+FREEMEMS=$(free |grep Mem| awk '{ print $3 }')
+
+TIMECOPY=$(date +"%d-%m-%Y")
+echo $TIMECOPY $FREEMEM
+
+curl -XPOST http://10.0.01.10:1111/api/task/add/Свободная%20память%20$FREEMEM%20$FREEMEMS*$TIMECOPY*MEMORY*0
+
+
+# echo $TIMECOPY $FREEMEM Окончено копирование >>logcopy.log
+
+
+
+FREEMEM=$(free |grep Mem| awk '{ print $2 }')
+echo Количество свободной памяти $FREEMEM

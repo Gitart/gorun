@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+
+echo "Внимание тест отправка Hello World" | mailx -s"Service notifier" alerc@meta.ua | at 15:20
+echo "Внимание тест отправка Hello World" | mailx -s"File not found" arthur.savch@gmail.com | at 15:25

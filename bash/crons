@@ -1,0 +1,2 @@
+40 2 * * * /home/arthur/backdb
+20 3 * * * /home/arthur/calc
