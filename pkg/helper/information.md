@@ -1,13 +1,16 @@
 #MAIN OFFICE
 
 Copyright GoInform (2014-2016)		
- 
-Description        : Service REST API  
-Version            : Version 5.2.0  
-Date Started       : 03.11.2014  
-Date Changed       : 29.07.2016 
-Author             : Savchenko Arthur    
-Last Upadte Date   : 29.07.2016 10:45 
+
+|Key|Description
+|----|----|
+|Description|Service REST API  
+|Version|Version 5.2.0  
+|Date Started|03.11.2014  
+|Date Changed|29.07.2016 
+|Author|Savchenko Arthur    
+|Last Upadte Date|29.07.2016 10:45 
+
  
 Copyright 2014 Main Office.  
 All Rights Reserved. 
@@ -25,23 +28,29 @@ All Rights Reserved.
        limitations under the License.
  
 #Условные обозначения, сокращения и соглашения о коде  
- (Термины, соглашения и обозначения, принятые в документации)
+(Термины, соглашения и обозначения, принятые в документации)
  
  		Внутреннее соглашение о наименовании функций :
- 		     SSS_FFF_Name
+#SSS_FFF_Name
+|Key|Description
+|----|----|
+|SSS|Сокращенный префикс
+|FF|Область применения
+|Name|Наименование функции
  
- 		     SSS    - Сокращенный префикс
- 		     FF     - Область применения
- 		     Name   - Наименование функции
- 
-       Group :
-             AP     - Ассортиментный план
+#Group 
+|Key|Description
+|----|----|
+|AP|Ассортиментный план
+
+
        
- 		## Name Servise :
- 		     Hof    - Head Office
- 		     Mov    - Move
- 		     Olp    - Olap
- 		     Dsc    - Discount
+## Name Servise :
+|Hof|Head Office
+|----|----|
+|Mov|Move
+|Olp|Olap
+|Dsc|Discount
  
 #Agreement and designations Prefix:
 
@@ -77,24 +86,26 @@ All Rights Reserved.
 Time format for cookies : time.Now().Format("Mon, 02 Jan 2006 15:04:05 MST")
  
 ## HTTP verbs :  Example(X-HTTP-Method-Override: PATCH) :
-            GET	    Get a resource or list of resources
-            POST    Create a resource
-            Get      List of resources using a more advanced query
-            PUT      Create a resource if it doesn't exist or, if it does, update it
-            PATCH	   Update a resource
-            DELETE   Delete a resource
- 
-# Response codes :
 
-    Response	Notes
-     *           200	    Success, and there is a response body.
-     *           201	    Success, when creating resources. Some APIs return 200 when successfully creating a resource. Look at the docs for the API you're using to be sure.
-     *           204	    Success, and there is no response body. For example, you'll get this when you delete a resource.
-     *           400	    The parameters in the URL or in the request body aren't valid.
-     *           403	    The authenticated user doesn't have permission to perform the operation.
-     *           404	    The resource doesn't exist, or the authenticated user doesn't have permission to see that it exists.
-     *           409	    There's a conflict between the request and the state of the data on the server.
-     *                      For example, if you attempt to submit a pull request and there is already a pull request for the commits, the response code is 409.
+|Method|Description
+|----|----|
+|**GET**|Get a resource or list of resources
+|**POST**|Create a resource
+|**Get**|List of resources using a more advanced query
+|**PUT**|Create a resource if it doesn't exist or, if it does, update it
+|**PATCH**|Update a resource
+|**DELETE**|Delete a resource
+  
+# Response	Notes :
+|Code|Description
+|----|----|
+|**200**|Success, and there is a response body.
+|**201**|Success, when creating resources. Some APIs return 200 when successfully creating a resource. 
+|**204**|Success, and there is no response body. For example, you'll get this when you delete a resource.
+|**400**|The parameters in the URL or in the request body aren't valid.
+|**403**|The authenticated user doesn't have permission to perform the operation.
+|**404**|The resource doesn't exist, or the authenticated user doesn't have permission to see that it exists.
+|**409**|There's a conflict between the request and the state of the data on the server.
  
 #Links for code HTTP :
             http://great-world.ru/kody-otvetov-servera-i-oshibki-http-200-301-404-302-500-503-550/ 
